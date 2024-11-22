@@ -1,0 +1,51 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import EventsList from '../../components/events-list.astro';
+
+const images = [
+  {
+    src: '/assets/images/events/green day/icon scool of excellence - green1.webp',
+    alt: 'Icon School of Excellence - Green Day 1',
+  },
+  {
+    src: '/assets/images/events/green day/icon scool of excellence - green2.webp',
+    alt: 'Icon School of Excellence - Green Day 2',
+  },
+  {
+    src: '/assets/images/events/green day/icon scool of excellence - green3.webp',
+    alt: 'Icon School of Excellence - Green Day 3',
+  },
+  {
+    src: '/assets/images/events/green day/icon scool of excellence - green4.webp',
+    alt: 'Icon School of Excellence - Green Day 4',
+  },
+  {
+    src: '/assets/images/events/green day/icon scool of excellence - green5.webp',
+    alt: 'Icon School of Excellence - Green Day 5',
+  },
+  {
+    src: '/assets/images/events/green day/icon scool of excellence - green6.webp',
+    alt: 'Icon School of Excellence - Green Day 6',
+  },
+];
+---
+
+<Layout title="">
+  <EventsList
+    event_title="Green Colour Day"
+    event_sub_title="Explore the latest photos from our Green Colour Day celebration at ISOE"
+    paragraph=`Icon School of Excellence celebrated a vibrant
+                                Green Colour Day with Nursery and KG students
+                                dressed in various shades of green. The day was
+                                filled with fun activities, including creative
+                                green-themed crafts and interactive storytelling
+                                that taught children about nature and the
+                                environment. Through games and learning about
+                                plants and animals, students enjoyed a day full
+                                of laughter, creativity, and community. Thanks
+                                to everyone who helped make the event special,
+                                and we look forward to more colorful
+                                celebrations in the future!`
+    images={images}
+  />
+</Layout>

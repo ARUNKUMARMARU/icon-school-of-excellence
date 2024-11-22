@@ -1,0 +1,48 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import EventsList from '../../components/events-list.astro';
+
+const images = [
+  {
+    src: '/assets/images/events/gandhi jayanti/icon school of excellence gandhi jayanti4.webp',
+    alt: 'Icon School of Excellence - ganthi jayandhi 1',
+  },
+  {
+    src: '/assets/images/events/gandhi jayanti/icon school of excellence gandhi jayanti.webp',
+    alt: 'Icon School of Excellence - ganthi jayandhi 2',
+  },
+  {
+    src: '/assets/images/events/gandhi jayanti/icon school of excellence gandhi jayanti1.webp',
+    alt: 'Icon School of Excellence - ganthi jayandhi 3',
+  },
+  {
+    src: '/assets/images/events/gandhi jayanti/icon school of excellence gandhi jayanti2.webp',
+    alt: 'Icon School of Excellence - ganthi jayandhi 4',
+  },
+  {
+    src: '/assets/images/events/gandhi jayanti/icon school of excellence gandhi jayanti3.webp',
+    alt: 'Icon School of Excellence - ganthi jayandhi 5',
+  },
+  {
+    src: '/assets/images/events/gandhi jayanti/icon school of excellence gandhi jayanti5.webp',
+    alt: 'Icon School of Excellence - Green Day 6',
+  },
+];
+---
+
+<Layout title="">
+  <EventsList
+    event_title="Gandhi Jayanti"
+    event_sub_title="Explore the latest photos from our Gandhi Jayanti celebration at ISOE"
+    paragraph=` Gandhi Jayanti was celebrated with inspiring
+                                speeches highlighting Mahatma Gandhi's
+                                principles of non-violence and truth. Skits and
+                                songs illustrated his teachings, while students
+                                participated in a community service activity
+                                (Swachh Bharat Abhiyan), embodying his spirit of
+                                selflessness. The celebration deepened
+                                appreciation for Gandhi's legacy and encouraged
+                                everyone to embrace his ideals in daily life.`
+    images={images}
+  />
+</Layout>
